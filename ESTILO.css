@@ -1,0 +1,102 @@
+main{
+    max-width: 800px;
+    margin: 5vh auto;
+    padding: 20px;
+}
+
+h1{
+    font-size:2.5em;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #707070f8
+}
+
+h5 {
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: 40px;
+}      
+
+h3{
+    font-size: 1.1em;
+    font-weight: 400;
+    color:black;
+}
+
+.faq{
+    padding: 20px 30px;
+    border: 1px solid rgba(0 0 0 /.1);
+    border-radius: 5px;
+    color: #979797;
+    position: relative;
+    line-height: 1.5em;
+    margin-top: 15px;
+}
+
+.faq .faq_text{
+    width: 90%;
+
+}
+.btn{
+    color:#5e5d5d ;
+    position: absolute;
+    right: 25px;
+    top: 35px;
+    font-weight: 400;
+    font-size: 1.4em;
+
+}
+
+
+/* Hide p tags*/
+.faq.open h3{
+    color:#00848f ;
+}
+
+
+
+.faq p{
+    display: none;
+}
+
+
+
+.faq.open p{
+    display: block;
+
+
+}
+.faq.open .btn{
+    color: #00848f ;
+}
+
+footer{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid rgba(00 84 80 / .2);
+}
+/*
+.popup {
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    width: 300px;
+    height: 180px;
+    padding: 15px;
+    border: solid 1px #979797;
+    background: #78e6d7;
+}*/
+.popup {
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    width: 300px;
+    height: 180px;
+    padding: 15px;
+    border: solid 1px #b92121;
+    background: #78e6d7;
+    display: none;
+}

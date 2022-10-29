@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;  
+}
+
+body {
+    background: linear-gradient(45deg, #64649b, #a84d4d, #080808);
+    background-repeat:no-repeat;
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container {
+    background: white;
+    max-width: 350vh;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+main h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+main h2 ::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #4444eb, #b91818, #080808);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #4444eb, #b91818, #080808);
+    
+
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9re;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.input-field input::placeholder {
+    color:rgba(0, 0, 0, 0.5);  
+}
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #b41717, #da4646);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+form input[type="submit"]:haver {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #b41717, #d35656);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;   
+}
+
+.footer span{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    text-align: center; 
+}
+
+.footer .social-field {
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 0.7rem;
+}
+
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer .social-field a {
+    text-decoration: none;
+    color: white;   
+}
+
+.footer .social-field.google {
+    background: linear-gradient(to right, #cf5050, #cf903d, #43ac3a, #3884b6);
+}
+
+.footer .social-field.facebook {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+
+
+#post {
+    width: 350px;
+    height: 40px;
+    margin: 200px auto;
+}
+
+#search{
+width: 550px;
+height: 80px;
+float: left;
+font-family: Arial;
+font-size: 20px;
+}
+
+
+
+main{
+    max-width: 800px;
+    margin: 5vh auto;
+    padding: 20px;
+}
+
+h1{
+    font-size:2.5em;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #707070f8
+}
+
+h5 {
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: 40px;
+}      
+
+h3{
+    font-size: 1.1em;
+    font-weight: 400;
+    color:black;
+}
+
+.faq{
+    padding: 20px 30px;
+    border: 1px solid rgba(0 0 0 /.1);
+    border-radius: 5px;
+    color: #979797;
+    position: relative;
+    line-height: 1.5em;
+    margin-top: 15px;
+}
+
+.faq .faq_text{
+    width: 90%;
+
+}
+.btn{
+    color:#5e5d5d ;
+    position: absolute;
+    right: 25px;
+    top: 35px;
+    font-weight: 400;
+    font-size: 1.4em;
+
+}
+
+
+/* Hide p tags*/
+.faq.open h3{
+    color:#00848f ;
+}
+
+
+
+.faq p{
+    display: none;
+}
+
+
+
+.faq.open p{
+    display: block;
+
+
+}
+.faq.open .btn{
+    color: #00848f ;
+}
+
+footer{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid rgba(00 84 80 / .2);
+}
+/*
+.popup {
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    width: 300px;
+    height: 180px;
+    padding: 15px;
+    border: solid 1px #979797;
+    background: #78e6d7;
+}*/
+.popup {
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    width: 300px;
+    height: 180px;
+    padding: 15px;
+    border: solid 1px #b92121;
+    background: #78e6d7;
+    display: none;
+}
